@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 3 and Chapter 4 of ICT</title>
+        <link rel="stylesheet" href="css/menu.css">
+        <style>
+            body {
+                background-color: #222831;
+            }
+            .image-div {
+                position: absolute;
+                left: 5%;
+                top: 10%;
+                width: 30%;
+                padding: 0px;
+            }
+            #image {
+                position: absolute;
+                left: 0%;
+                top: 0%;
+                max-width:100%;
+            }
+            .main {
+                position: absolute;
+                left: 40%;
+                top: 7%;
+                width: 50%;
+                height: 86%;
+                padding: 0px;
+                margin: 0px;
+                display: flex; 
+                flex-direction: column;
+            }
+            h1 {
+                color: #ffffff;
+                font-size: min(6vw, 15vh);
+                margin: 0px;
+                flex-basis: content;
+                order: 1;
+            }
+            h3 {
+                color: #ffffff;
+                font-size: min(3vw, 7.5vh);
+                margin: 0px;
+                flex-basis: content;
+                order: 2;
+            }
+            a:link, a:hover, a:visited {
+                color: white;
+                font-size: min(1.2vw, 3vh);
+                text-decoration: none;
+            }
+            .menus {
+                width: 100%;
+                flex-grow: 1;
+                order: 3;
+                display: flex;
+                flex-direction: row;
+            }
+            .chapter-menu {
+                border: 2px solid #ffffff;
+                border-radius: 20px;
+                color: white;
+                flex: 1 0 0;
+                margin-right: 6%;
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+            }
+            .menu-title {
+                border-bottom: 2px solid #ffffff;
+                width: 100%;
+            }
+            .menu-title-text {
+                font-size: min(2.5vw, 6.3vh);
+                margin: 2px;
+                margin-left: 5px;
+            }
+            .menu-contents {
+                font-size: min(1.6vw, 4vh);
+            }
+            .menu-contents-list {
+                margin-top: 4px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="image-div">
+            <img id="image" src="images/ictTextbook.jpg">
+        </div>
+        <div class="main">
+            <h1>Learn ICT</h1>
+            <h3>Start your free ICT course today</h3>
+            <div class="menus">
+                <div class="chapter-menu">
+                    <div class="menu-title">
+                        <div class="menu-title-text">Chapter 3</div>
+                    </div>
+                    <ul class="menu-contents-list">
+                        <li>
+                            <a href="chapter-3/backing-up-of-data.html">Backing up of data</a>
+                        </li>
+                        <li>
+                            <a href="chapter-3/types-of-access.html">Types of access</a>
+                        </li>
+                        <li>
+                            <a href="chapter-3/secondary-storage-media.html">Secondary storage media</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chapter-menu">
+                    <div class="menu-title">
+                        <div class="menu-title-text">Chapter 4</div>
+                    </div>
+                    <ul class="menu-contents-list">
+                        <li>
+                            <a href="chapter-4/networks.html">Networks</a>
+                        </li>
+                        <li>
+                            <a href="chapter-4/network-issues-and-communication.html">Network issues and communication</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
